@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin-bottom: 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.square:hover {
+    background-color: #aa9b9b;
+}
+
+#endGame {
+    text-align: center;
+}
+
+#restartButton, #playVsComputerButton {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#restartButton:hover, #playVsComputerButton:hover {
+    background-color: #555;
+}
